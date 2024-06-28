@@ -381,6 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollTask = btf.throttle(() => {
       const currentTop = window.scrollY || document.documentElement.scrollTop
       const isDown = scrollDirection(currentTop)
+      header.classList.add('is-top-bar')
       if (currentTop > 56) {
         if (flag === '') {
           $header.classList.add('nav-fixed')
